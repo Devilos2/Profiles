@@ -15,22 +15,22 @@
     <nav>
         <div class="nav-div">
             <div class="left-nav">
-                <h2><span>Om Sukalkar</span></h2>
+                <h2><span><a href="https://devilos2.github.io/Profiles/"></a>Om Sukalkar</span></h2>
             </div>
             <div class="right-nav">
                 <ul>
-                    <li class="nav-option1"><a href="#">About</a></li>
-                    <li class="nav-option2"><a href="#">Education</a></li>
-                    <li class="nav-option3"><a href="#">Skills</a></li>
-                    <li class="nav-option4"><a href="#">Projects</a></li>
-                    <li class="nav-option5"><a href="#">Contacts</a></li>
+                    <li class="nav-option1"><a href="#about">About</a></li>
+                    <li class="nav-option2"><a href="#experiance">Education</a></li>
+                    <li class="nav-option3"><a href="#skill">Skills</a></li>
+                    <li class="nav-option4"><a href="#project">Projects</a></li>
+                    <li class="nav-option5"><a href="#contact">Contacts</a></li>
                 </ul>
             </div>
         </div>
     </nav>
     <main>
         <section class="section1">
-            <div class="photo1"></div>
+            <div class="photo1" id="picc" onclick="tab()"></div>
             <div class="resume">
                 <h2>Hello, I'm <span>Om Sukalkar</span></h2>
                 <p>A passionate <b>UI/UX developer</b> focus <br> on bulding exceptional digidal experiances
@@ -39,9 +39,9 @@
                         <img src="img/download-resume.svg" alt="download"></a></span>
             </div>
         </section>
-        <section class="section2">
+        <section class="section2" id="about">
             <div class="section-child scale">
-                <h2>About Me</h2>
+                <h2 >About Me</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, repudiandae. Necessitatibus dicta
                     eaque ducimus, cupiditate, corporis accusantium sapiente inventore repellat amet non ipsa similique
                     repellendus vel! Earum voluptate voluptatibus debitis.</p>
@@ -50,7 +50,7 @@
                     repellendus vel! Earum voluptate voluptatibus debitis.</p>
             </div>
         </section>
-        <section class="section3">
+        <section class="section3" id="experiance">
             <div class="section-child scale">
                 <h2>Education & Experiances</h2>
                 <div class="about-card">
@@ -82,7 +82,7 @@
                         <h3>Javascript</h3>
                         <p>Programming Language</p>
                     </div>
-                    <div class="skills skills4">
+                    <div class="skills skills4" id="skill">
                         <img src="img/icons8-react.svg" alt="html">
                         <h3>React.js</h3>
                         <p>Frent-End Library</p>
@@ -122,27 +122,28 @@
                         <h3>GIT</h3>
                         <p>Version Control</p>
                     </div>
-
                 </div>
             </div>
         </section>
-        <section class="section5">
+        <section class="section5" id="project">
             <div class="section-child">
                 <h2>My Projects</h2>
                 <div class="project-cards">
                     <div class="project project1">
                         <div class="card card1 scale">
+                             <a href="https://devilos2.github.io/TODO/" target="_blank" >
                             <img src="img/todo.png" alt="project1" width="2px">
                             <h4>TO-DO List</h4>
                             <p>TO-Do Keep life simple and productive.
                                 Your tasks, notes, and goals — all in one place.</p>
-                            <a href="#"><span>View project -></span></a>
+                           <span>View project -></span></a>
                         </div>
                         <div class="card card2 scale">
+                            <a href="https://devilos2.github.io/DesignPair/" target="_blank">
                             <img src="img/designpair.png" alt="project1" width="2px">
                             <h4>StyleMyText</h4>
                             <p>StyleMyText Style your words with custom colors, backgrounds, and fonts effortlessly.</p>
-                            <a href="#"><span>View project -></span></a>
+                            <span>View project -></span></a>
                         </div>
                         <div class="card card3 scale">
                             <img src="img/peakpx.jpg" alt="project1" width="2px">
@@ -156,7 +157,7 @@
                 </div>
             </div>
         </section>
-        <section class="section6">
+        <section class="section6" id="contact">
             <div class="section-child scale">
                 <h2>Contact</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
@@ -174,6 +175,27 @@
 
     </main>
 
+    <script>
+         let i=false;
+        function tab()
+        {
+           
+            if(i==false)
+        {
+            let pic=document.getElementById("picc");
+            pic.style.transform= "scale(2)"
+            pic.style.borderRadius="5px"
+            i=true
+        }
+        else{
+            let pic=document.getElementById("picc");
+            pic.style.transform= "scale(1)"
+            pic.style.borderRadius="50%"
+            i=false
+        }
+            
+        }
+    </script>
 </body>
 
 </html>

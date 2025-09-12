@@ -73,7 +73,7 @@
     }
 
     .right-nav li {
-        border: 1px solid red;
+        /* border: 1px solid red; */
         min-width: fit-content;
         display: flex;
 
@@ -97,7 +97,7 @@
     .right-nav a:hover {
         transition: all;
         transition-duration: 0.5s;
-        transform: scale(1.2);
+        transform: scale(1.1);
     }
 
 
@@ -118,17 +118,17 @@
         width: 200px;
         height: 200px;
         border-radius: 50%;
-        background-image: url(img/peakpx.jpg);
+        background-image: url(img/om.jpg);
         background-position: center;
         background-size: cover;
         border: 2px outset rgb(206, 252, 253);
-        transition-duration: 1s;
+        /* transition-duration: 1s; */
     }
 
-    .photo1:hover {
+    /* .photo1:hover { */
 
-        transform: rotateY(350deg);
-    }
+        /* transform: rotateY(350deg); */
+    /* } */
 
     .photo img {
         width: 100%;
@@ -435,7 +435,7 @@
 
     .scale:hover {
         transition: all;
-        transition-duration: 0.1s;
+        transition-duration: 1.2s;
         transform: scale(1.05);
 
     }
